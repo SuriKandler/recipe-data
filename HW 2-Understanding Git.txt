@@ -21,7 +21,7 @@ git commit -am changeingredients
 git reset 2f360fa --hard \ git restore --worktree --staged .
 echo salt >>ingredients.txt
 git commit -am addedingredient
-git reset <commit> --hard
+git reset <commit> --soft
 echo Chocolate Cake >>Recipes.txt
 git add .
 git commit -m finalchange
