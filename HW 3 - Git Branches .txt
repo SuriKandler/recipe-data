@@ -1,0 +1,33 @@
+ 
+C:\Users\Mendel\source\repos\recipe-data>git switch -c diet
+echo low fat vegetables> Ingredients.txt
+git branch -vv
+git commit -am "Changed Ingredients"
+git push
+git push --set-upstream origin diet
+git switch main
+echo oil and sugar > Ingredients.txt
+git stash
+git switch diet
+echo Warning, low calorie diets may be bad for your health > Warning.txt
+git add .
+git commit -m "warning message added"
+git switch main
+git stash pop
+git commit -am "changed ingredients"
+git fetch
+git switch animal-food
+echo milk > cat-food
+git add .
+git commit -m "cat food added"
+git push
+
+
+
+
+
+
+
+
+
+
